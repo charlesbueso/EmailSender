@@ -111,13 +111,13 @@ public class SendMail {
 
     public static void main(String[] args) {
     	// Recipient's email ID needs to be mentioned.
-    	String to[] = {"diegogacoga@hotmail.com","papia1999@hotmail.com","calvo.rodri.cobo@hotmail.com","alonso.rdzx@gmail.com","perezcamarenadiego@gmail.com","johnfborb@gmail.com","je.floresrion@gmail.com","zatarainrodrigo@gmail.com"};
+    	String to[] = {"Add here all receivers"};
         String pngPath[] = {"C:\\Users\\papia\\Eclipse Unziped\\eclipse\\Bizarre Code\\DieguitoFOTO.PNG","C:\\Users\\papia\\Eclipse Unziped\\eclipse\\Bizarre Code\\CharlieFOTO.PNG","C:\\Users\\papia\\Eclipse Unziped\\eclipse\\Bizarre Code\\CalvoFOTO.PNG","C:\\Users\\papia\\Eclipse Unziped\\eclipse\\Bizarre Code\\LonchoFOTO.PNG","C:\\Users\\papia\\Eclipse Unziped\\eclipse\\Bizarre Code\\PerezFOTO.PNG","C:\\Users\\papia\\Eclipse Unziped\\eclipse\\Bizarre Code\\JohnFOTO.PNG","C:\\Users\\papia\\Eclipse Unziped\\eclipse\\Bizarre Code\\EmiFOTO.PNG","C:\\Users\\papia\\Eclipse Unziped\\eclipse\\Bizarre Code\\RoyFOTO.PNG"};
         HashMap<String,String> hm = new HashMap<String,String>();
         hm = validHashMap(to,pngPath);
         List<String> l = new ArrayList<String>(hm.keySet());
         // Sender's email ID needs to be mentioned
-        String from = "charlesbueso@gmail.com";
+        String from = "from gmail";
 
         // Assuming you are sending email from through gmails smtp
         String host = "smtp.gmail.com";
@@ -137,7 +137,7 @@ public class SendMail {
 
             protected PasswordAuthentication getPasswordAuthentication() {
 
-                return new PasswordAuthentication("charlesbueso@gmail.com", "Charly6265.");
+                return new PasswordAuthentication("sender email", "sender password");
 
             }
 
